@@ -1,5 +1,5 @@
 {% set name = "spirv-headers" %}
-{% set version = "1.4.304.1" %}
+{% set version = "1.4.309.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   - url: https://github.com/KhronosGroup/SPIRV-Headers/archive/refs/tags/vulkan-sdk-{{ version }}.tar.gz
-    sha256: 66e6cec19e7433fc58ace8cdf4040be0d52bb5920e54109967df2dd9598a8d48
+    sha256: a96f8b4f2dfb18f7432e5c523e220ab0075372a9509e0c25fbff21c76af0de7c
 
 build:
   number: 0
