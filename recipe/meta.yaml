@@ -15,10 +15,9 @@ build:
 requirements:
   build:
     - {{ compiler('cxx') }}
-    - {{ stdlib("c") }}
     - cmake
     - make    # [unix]
-    - ninja   # [win]
+    - ninja-base   # [win]
   host:
   run:
 
@@ -29,9 +28,13 @@ test:
 
 about:
   home: https://github.com/KhronosGroup/SPIRV-Headers
+  dev_url: https://github.com/KhronosGroup/SPIRV-Headers
+  doc_url: https://github.com/KhronosGroup/SPIRV-Headers
   license: BSD-3-Clause
+  license_family: BSD
   license_file: LICENSE
   summary: Machine-readable files for the SPIR-V Registry
+  description: Machine-readable files for the SPIR-V Registry
 
 extra:
   recipe-maintainers:
